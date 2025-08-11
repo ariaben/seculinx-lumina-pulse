@@ -64,7 +64,8 @@ const Index = () => {
             <a href="#about" className="opacity-80 hover:opacity-100 transition-opacity">About</a>
             <a href="#products" className="opacity-80 hover:opacity-100 transition-opacity">Products</a>
             <a href="/brightsense" className="opacity-80 hover:opacity-100 transition-opacity">BrightSense</a>
-            <a href="#contact" className="opacity-80 hover:opacity-100 transition-opacity">Contact</a>
+            <a href="/invest" className="opacity-80 hover:opacity-100 transition-opacity">Invest</a>
+            <a href="/contact" className="opacity-80 hover:opacity-100 transition-opacity">Contact</a>
           </nav>
           <Button variant="hero" size="sm">Get Updates</Button>
         </div>
