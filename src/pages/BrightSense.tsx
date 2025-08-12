@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { CheckCircle2, Waves, Sparkles, Brain, Lightbulb, Shield, Activity } from "lucide-react";
 import hero from "@/assets/brightsense-hero.jpg";
+import SiteHeader from "@/components/SiteHeader";
 
 const Step = ({ index, title, desc }: { index: number; title: string; desc: string }) => (
   <div className="flex items-start gap-4">
@@ -28,6 +29,7 @@ const BrightSense = () => {
 
   return (
     <div>
+      <SiteHeader />
       {/* Hero */}
       <section className="relative overflow-hidden bg-animated-gradient animate-gradient-move">
         <div className="absolute inset-0">

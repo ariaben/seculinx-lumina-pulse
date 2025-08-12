@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { CheckCircle2, TrendingUp, Shield, Sparkles, Rocket, Leaf } from "lucide-react";
+import SiteHeader from "@/components/SiteHeader";
 
 const useCountUp = (end: number, durationMs = 1400) => {
   const [value, setValue] = useState(0);
@@ -64,6 +65,7 @@ const Invest = () => {
 
   return (
     <div className="min-h-screen">
+      <SiteHeader />
       {/* Hero */}
       <section className="relative min-h-[80svh] overflow-hidden bg-animated-gradient animate-gradient-move">
         <div className="relative container mx-auto grid place-items-center py-24">

@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight, ShieldCheck, Leaf, Lock, Sparkles, Lightbulb, Activity, Gauge } from "lucide-react";
 import heroImage from "@/assets/hero-smart-home.jpg";
+import SiteHeader from "@/components/SiteHeader";
 
 const useParallax = () => {
   const ref = useRef<HTMLDivElement | null>(null);
@@ -57,19 +58,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen">
-      <header className="fixed top-0 left-0 right-0 z-50">
-        <div className="container mx-auto flex items-center justify-between py-4">
-          <a href="#home" className="font-semibold tracking-tight text-lg">Seculinx</a>
-          <nav className="hidden md:flex items-center gap-6 text-sm">
-            <a href="#about" className="opacity-80 hover:opacity-100 transition-opacity">About</a>
-            <a href="#products" className="opacity-80 hover:opacity-100 transition-opacity">Products</a>
-            <a href="/brightsense" className="opacity-80 hover:opacity-100 transition-opacity">BrightSense</a>
-            <a href="/invest" className="opacity-80 hover:opacity-100 transition-opacity">Invest</a>
-            <a href="/contact" className="opacity-80 hover:opacity-100 transition-opacity">Contact</a>
-          </nav>
-          <Button variant="hero" size="sm">Get Updates</Button>
-        </div>
-      </header>
+      <SiteHeader />
 
       <main>
         {/* Hero */}
