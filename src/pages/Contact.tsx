@@ -7,6 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { useToast } from "@/hooks/use-toast";
+import SiteHeader from "@/components/SiteHeader";
 
 const schema = z.object({
   name: z.string().min(2, "Please enter your full name"),
@@ -42,6 +43,7 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen bg-animated-gradient animate-gradient-move">
+      <SiteHeader />
       <header className="container mx-auto py-8">
         <h1 className="text-4xl font-bold tracking-tight">Contact Us</h1>
         <p className="text-muted-foreground mt-2 max-w-2xl">We’d love to hear from you. Whether you’re exploring solutions, media, or partnerships—let’s talk.</p>
