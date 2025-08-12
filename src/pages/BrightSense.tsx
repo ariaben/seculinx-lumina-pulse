@@ -109,8 +109,16 @@ const BrightSense = () => {
             <p className="text-muted-foreground text-lg">Powered by mmWave technology, BrightSense offers unparalleled detection accuracy while maintaining total privacy. Combined with AI-driven lighting algorithms, it delivers a lighting experience that feels natural and human.</p>
           </div>
           <div className="relative h-72 rounded-xl card-gradient-border p-[1px]">
-            <div className="card-surface rounded-xl h-full grid place-items-center">
-              <Lightbulb className="text-primary" />
+            <div className="card-surface rounded-xl h-full grid place-items-center group relative overflow-hidden">
+              <div
+                aria-hidden
+                className="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                style={{ background: "radial-gradient(ellipse at center, hsl(var(--primary)/0.35) 0%, transparent 60%)" }}
+              />
+              <Lightbulb
+                className="w-16 h-16 md:w-20 md:h-20 transition-all duration-300 text-muted-foreground group-hover:text-primary group-hover:scale-105 group-hover:drop-shadow-[0_0_28px_hsl(var(--primary)/0.55)]"
+                fill="currentColor"
+              />
             </div>
           </div>
         </div>
