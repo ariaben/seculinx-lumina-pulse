@@ -69,7 +69,7 @@ const Index = () => {
           <div className="relative container mx-auto min-h-[100svh] grid place-items-center">
             <div className="max-w-3xl text-center space-y-6">
               <h1 className="text-4xl md:text-6xl font-bold tracking-tight">Smarter Living, Connected by Design.</h1>
-              <p className="text-lg md:text-xl text-muted-foreground">
+              <p className="text-lg md:text-xl text-foreground/90">
                 At Seculinx, we create intelligent, sustainable, and secure living experiences through seamless automation.
               </p>
               <div className="flex items-center justify-center gap-4">
