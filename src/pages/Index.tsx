@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowRight, ShieldCheck, Leaf, Lock, Sparkles, Lightbulb, Activity, Gauge } from "lucide-react";
+import { ArrowRight, ShieldCheck, Leaf, Lock, Sparkles, Lightbulb, Activity, Gauge, Instagram, Linkedin, Twitter } from "lucide-react";
 import heroImage from "@/assets/hero-smart-home.jpg";
 import SiteHeader from "@/components/SiteHeader";
 
@@ -262,9 +262,33 @@ const Index = () => {
             <h4 className="text-xl font-semibold mb-3">Seculinx</h4>
             <p className="text-muted-foreground max-w-md">Premium smart home solutions for a life that feels effortless.</p>
             <div className="flex gap-4 mt-4">
-              <a aria-label="Twitter" className="icon-pulse" href="#">T</a>
-              <a aria-label="LinkedIn" className="icon-pulse" href="#">in</a>
-              <a aria-label="YouTube" className="icon-pulse" href="#">▶</a>
+              <a 
+                aria-label="Instagram" 
+                className="icon-pulse text-foreground hover:text-primary transition-colors" 
+                href="https://www.instagram.com/seculinx/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Instagram size={20} />
+              </a>
+              <a 
+                aria-label="LinkedIn" 
+                className="icon-pulse text-foreground hover:text-primary transition-colors" 
+                href="https://www.linkedin.com/company/seculinx/?viewAsMember=true"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Linkedin size={20} />
+              </a>
+              <a 
+                aria-label="X (Twitter)" 
+                className="icon-pulse text-foreground hover:text-primary transition-colors" 
+                href="https://x.com/seculinx"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Twitter size={20} />
+              </a>
             </div>
           </div>
           <div>
