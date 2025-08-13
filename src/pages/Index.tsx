@@ -66,6 +66,35 @@ const Index = () => {
           <div ref={parallaxRef} className="absolute inset-0 pointer-events-none" style={{ transform: "translate3d(calc(var(--parallax-x, 0px)*1px), calc(var(--parallax-y, 0px)*1px), 0)" }}>
             <img src={heroImage} alt="Futuristic smart home interior with adaptive lighting by Seculinx" className="w-full h-full object-cover opacity-70 img-zoom" loading="eager" />
           </div>
+          
+          {/* Interactive Light Overlays */}
+          <div className="absolute inset-0 pointer-events-none">
+            {/* Light 1 - Top left ceiling light */}
+            <div className="absolute top-[20%] left-[25%] w-16 h-16 pointer-events-auto group cursor-pointer">
+              <div className="w-full h-full rounded-full bg-primary/20 group-hover:bg-primary/60 group-hover:shadow-[0_0_30px_hsl(var(--primary)/0.8)] transition-all duration-300 group-hover:scale-150"></div>
+            </div>
+            
+            {/* Light 2 - Top right ceiling light */}
+            <div className="absolute top-[25%] right-[30%] w-12 h-12 pointer-events-auto group cursor-pointer">
+              <div className="w-full h-full rounded-full bg-primary/20 group-hover:bg-primary/60 group-hover:shadow-[0_0_25px_hsl(var(--primary)/0.8)] transition-all duration-300 group-hover:scale-150"></div>
+            </div>
+            
+            {/* Light 3 - Wall accent light */}
+            <div className="absolute top-[45%] left-[15%] w-10 h-10 pointer-events-auto group cursor-pointer">
+              <div className="w-full h-full rounded-full bg-accent/30 group-hover:bg-accent/70 group-hover:shadow-[0_0_20px_hsl(var(--accent)/0.8)] transition-all duration-300 group-hover:scale-150"></div>
+            </div>
+            
+            {/* Light 4 - Floor lamp */}
+            <div className="absolute bottom-[30%] right-[25%] w-14 h-14 pointer-events-auto group cursor-pointer">
+              <div className="w-full h-full rounded-full bg-secondary/25 group-hover:bg-secondary/65 group-hover:shadow-[0_0_35px_hsl(var(--secondary)/0.8)] transition-all duration-300 group-hover:scale-150"></div>
+            </div>
+            
+            {/* Light 5 - Under cabinet lighting */}
+            <div className="absolute bottom-[40%] left-[40%] w-8 h-8 pointer-events-auto group cursor-pointer">
+              <div className="w-full h-full rounded-full bg-primary/25 group-hover:bg-primary/65 group-hover:shadow-[0_0_15px_hsl(var(--primary)/0.8)] transition-all duration-300 group-hover:scale-150"></div>
+            </div>
+          </div>
+          
           <div className="relative container mx-auto min-h-[100svh] grid place-items-center">
             <div className="max-w-3xl text-center space-y-6">
               <h1 className="text-4xl md:text-6xl font-bold tracking-tight">Smarter Living, Connected by Design.</h1>
